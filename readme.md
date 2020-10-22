@@ -17,6 +17,21 @@ $ composer require willywes/apiresponse
 
 ## Usage
 
+### Imports
+
+``` php
+import \Willywes\ApiResponse\ApiResponse;
+```
+
+### Imports
+
+``` php
+$data = [
+   'users' => User::all();
+];
+return ApiResponse::JsonInfo($data)
+```
+
 ## Change log
 
 Please see the [changelog](changelog.md) for more information on what has changed recently.
