@@ -5,8 +5,7 @@
 [![Build Status][ico-travis]][link-travis]
 [![StyleCI][ico-styleci]][link-styleci]
 
-Class to generate a standard structure for api json responses. Take a look at [contributing.md](contributing.md) to see a to do list.
-
+Class to generate a standard structure for api json responses.
 ## Installation
 
 Via Composer
@@ -24,7 +23,7 @@ use Willywes\ApiResponse\ApiResponse;
 ```
 
 ### Functions of Control (HTTP/200 OK)
-Default functions that always return a http 200 code, but have a control state
+Default functions that always return a http 200 code, but have a control state.
 
 #### Params
 
@@ -42,7 +41,7 @@ Default functions that always return a http 200 code, but have a control state
 |**JsonError**                 | Response status "error" with HTTP 200            |
 |**JsonWarning**               | Response status "warning" with HTTP 200          |
 |**JsonInfo**                  | Response status "info" with HTTP 200             |
-|**JsonFieldValidation**      | Response status "fields_validation" with HTTP 200|
+|**JsonFieldValidation**      | Response status "field_validation" with HTTP 200|
 
 #### Examples
 
@@ -174,29 +173,9 @@ return ApiResponse::Unauthorized(null);
 Status Code: 401 Unauthorized
 ```
 
-
-## Change log
-
-Please see the [changelog](changelog.md) for more information on what has changed recently.
-
-## Testing
-
-``` bash
-$ composer test
-```
-
-## Contributing
-
-Please see [contributing.md](contributing.md) for details and a todolist.
-
-## Security
-
-If you discover any security related issues, please email author email instead of using the issue tracker.
-
 ## Credits
 
 - [author name][link-author]
-- [All Contributors][link-contributors]
 
 ## License
 
