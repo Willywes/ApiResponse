@@ -175,7 +175,7 @@ Status Code: 401 Unauthorized
 
 ## Credits
 
-- [author name][link-author]
+- [Alejandro Isla][link-author]
 
 ## License
 
