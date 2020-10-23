@@ -1,6 +1,6 @@
 {
     "name": "willywes/apiresponse",
-    "description": "Class to generate a standarized structure for json responses",
+    "description": "Class to generate a standard structure for api json responses",
     "license": "MIT",
     "authors": [
         {
@@ -10,7 +10,7 @@
         }
     ],
     "homepage": "https://github.com/Willywes/ApiResponse",
-    "keywords": ["Laravel", "ApiResponse", "Api", "Lumen", "Api Response", "Standar Api Response"],
+    "keywords": ["Laravel", "ApiResponse", "Api", "Lumen", "Api Response", "Standard Api Response"],
     "require": {
         "illuminate/support": "~5|~6|~7|~8"
     },
