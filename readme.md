@@ -63,7 +63,7 @@ return ApiResponse::JsonSuccess([
     "message": null,
     "data":{
         "user":{
-            "id":1
+            "id":1,
             "full_name":"John Smith",
             "email":"jsmith@test.cl",
             "role_id":1
