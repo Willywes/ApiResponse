@@ -122,14 +122,16 @@ Default functions that returns a specific http code, but in the same way the bod
 
 |Function                        |Description                                      |
 |--------------------------------|-------------------------------------------------|
-|**Ok**                         | Response status "error" with HTTP 200           |
-|**BadRequest**                | Response status "error" with HTTP 400           |
-|**Unauthorized**              | Response status "error" with HTTP 401           |
-|**Forbidden**                 | Response status "error" with HTTP 403           |
-|**NotFound**                  | Response status "error" with HTTP 404           |
-|**InternalServerError**      | Response status "error" with HTTP 500           |
-|**NotImplemented**            | Response status "error" with HTTP 501           |
-|**BadGateway**                | Response status "error" with HTTP 502           |
+|**Ok**| Response status "error" with HTTP 200 |
+|**Created**| Response status "error" with HTTP 201 |
+|**Accepted**| Response status "error" with HTTP 202 |
+|**BadRequest**| Response status "error" with HTTP 400 |
+|**Unauthorized**| Response status "error" with HTTP 401 |
+|**Forbidden**| Response status "error" with HTTP 403 |
+|**NotFound**| Response status "error" with HTTP 404 |
+|**InternalServerError**| Response status "error" with HTTP 500 |
+|**NotImplemented**| Response status "error" with HTTP 501 |
+|**BadGateway**| Response status "error" with HTTP 502 |
 
 #### Examples
 
@@ -156,7 +158,7 @@ Status Code: 404 Not Found
 ##### 401 Error example
 ``` php
 //Execution in php
-return ApiResponse::Unauthorized(null);
+return ApiResponse::Unauthorized();
 ```
 
 ``` json

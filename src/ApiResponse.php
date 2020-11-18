@@ -37,6 +37,16 @@ class ApiResponse implements ICode
         return response()->json(Format::Response(self::STATUS_ERROR, self::CODE_200, $message, $data), 200);
     }
 
+    public static function Created($data = null, $message = null)
+    {
+        return response()->json(Format::Response(self::STATUS_ERROR, self::CODE_201, $message, $data), 201);
+    }
+
+    public static function Accepted($data = null, $message = null)
+    {
+        return response()->json(Format::Response(self::STATUS_ERROR, self::CODE_202, $message, $data), 202);
+    }
+
     // ERRORS 40*
     public static function BadRequest($data = null, $message = null)
     {
