@@ -189,6 +189,5 @@ license. Please see the [license file](license.md) for more information.
 [link-packagist]: https://packagist.org/packages/willywes/apiresponse
 [link-downloads]: https://packagist.org/packages/willywes/apiresponse
 [link-travis]: https://travis-ci.org/willywes/apiresponse
-[link-styleci]: https://styleci.io/repos/12345678
+[link-styleci]: https://styleci.io/repos/306464936
 [link-author]: https://github.com/willywes
-[link-contributors]: ../../contributors
