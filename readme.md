@@ -184,7 +184,7 @@ license. Please see the [license file](license.md) for more information.
 [ico-version]: https://img.shields.io/packagist/v/willywes/apiresponse.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/willywes/apiresponse.svg?style=flat-square
 [ico-travis]: https://img.shields.io/travis/willywes/apiresponse/master.svg?style=flat-square
-[ico-styleci]: https://styleci.io/repos/12345678/shield
+[ico-styleci]: https://styleci.io/repos/306464936/shield
 
 [link-packagist]: https://packagist.org/packages/willywes/apiresponse
 [link-downloads]: https://packagist.org/packages/willywes/apiresponse
