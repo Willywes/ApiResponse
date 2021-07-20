@@ -108,5 +108,4 @@ class ApiResponse implements ICode
     {
         return response()->json(Format::Response(self::STATUS_ERROR, self::CODE_503, $message, $data), 503);
     }
-
 }

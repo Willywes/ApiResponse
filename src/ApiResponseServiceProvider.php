@@ -31,7 +31,7 @@ class ApiResponseServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->mergeConfigFrom(__DIR__ . '/../config/apiresponse.php', 'apiresponse');
+        $this->mergeConfigFrom(__DIR__.'/../config/apiresponse.php', 'apiresponse');
 
         // Register the service the package provides.
         $this->app->singleton('apiresponse', function ($app) {
@@ -58,7 +58,7 @@ class ApiResponseServiceProvider extends ServiceProvider
     {
         // Publishing the configuration file.
         $this->publishes([
-            __DIR__ . '/../config/apiresponse.php' => config_path('apiresponse.php'),
+            __DIR__.'/../config/apiresponse.php' => config_path('apiresponse.php'),
         ], 'apiresponse.config');
 
         // Publishing the views.
