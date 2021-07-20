@@ -6,7 +6,7 @@ All notable changes to `ApiResponse` will be documented in this file.
 ### Update
 - Update versión composer
 ---
+## Version 0.2.5
 ## Version 0.2.1
 ### Added
 - Everything
-

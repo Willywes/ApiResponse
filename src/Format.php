@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Willywes\ApiResponse;
-
 
 class Format implements ICode
 {
@@ -12,7 +10,7 @@ class Format implements ICode
             'status' => $status,
             'title' => $title ?? self::SetDefaultTitle($status),
             'message' => $message,
-            'data' => $data
+            'data' => $data,
         ];
     }
 
@@ -34,5 +32,4 @@ class Format implements ICode
             return 'Error en campos.';
         }
     }
-
 }
