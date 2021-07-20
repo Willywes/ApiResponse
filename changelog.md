@@ -3,8 +3,8 @@
 All notable changes to `ApiResponse` will be documented in this file.
 
 ## v1.0.0 - 2021-07-20
-### Update
-- Update versión composer
+### Added
+- New HTTP Codes
 ---
 ## Version 0.2.5
 ### Added
