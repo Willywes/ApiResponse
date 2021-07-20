@@ -107,7 +107,7 @@ return ApiResponse::JsonError(null, 'something has gone wrong!', 'oops');
 Status Code: 200 OK
 ```
 
-### Functions with specific http code
+### Functions with specific HTTP Code
 Default functions that returns a specific http code, but in the same way the body responds
 
 #### Params
@@ -118,18 +118,34 @@ Default functions that returns a specific http code, but in the same way the bod
 |**message**   |custom message to response (optional)  |
 
 
-#### Functions
+#### Functions Code HTTP 2XX
+|Code|Name|Description|
+|---|---|---|
+|**200**|**Ok**|Response status "error" with HTTP 200|
+|**201**|**Created**|Response status "error" with HTTP 201|
+|**202**|**Accepted**|Response status "error" with HTTP 202|
+|**203**|**NonAuthoritativeInformation**|Response status "error" with HTTP 203|
+|**204**|**NoContent**|Response status "error" with HTTP 204|
 
-|Function                        |Description                                      |
-|--------------------------------|-------------------------------------------------|
-|**Ok**                         | Response status "error" with HTTP 200           |
-|**BadRequest**                | Response status "error" with HTTP 400           |
-|**Unauthorized**              | Response status "error" with HTTP 401           |
-|**Forbidden**                 | Response status "error" with HTTP 403           |
-|**NotFound**                  | Response status "error" with HTTP 404           |
-|**InternalServerError**      | Response status "error" with HTTP 500           |
-|**NotImplemented**            | Response status "error" with HTTP 501           |
-|**BadGateway**                | Response status "error" with HTTP 502           |
+
+#### Functions Code HTTP 4XX
+|Code|Name|Description|
+|---|---|---|
+|**400**|**BadRequest**|Response status "error" with HTTP 400|
+|**401**|**Unauthorized**|Response status "error" with HTTP 401|
+|**403**|**Forbidden**|Response status "error" with HTTP 403|
+|**404**|**NotFound**|Response status "error" with HTTP 404|
+|**405**|**MethodNotAllowed**|Response status "error" with HTTP 405|
+|**408**|**RequestTimeout**|Response status "error" with HTTP 408|
+
+
+#### Functions Code HTTP 5XX
+|Code|Name|Description|
+|---|---|---|
+|**500**|**InternalServerError**|Response status "error" with HTTP 500|
+|**501**|**NotImplemented**|Response status "error" with HTTP 501|
+|**502**|**BadGateway**|Response status "error" with HTTP 502|
+|**503**|**ServiceUnavailable**|Response status "error" with HTTP 503|
 
 #### Examples
 
@@ -137,6 +153,9 @@ Default functions that returns a specific http code, but in the same way the bod
 ``` php
 //Execution in php
 return ApiResponse::NotFound(null, 'object not found!');
+// or
+//Execution in php without params
+return ApiResponse::NotFound();
 ```
 
 ``` json
@@ -171,6 +190,26 @@ return ApiResponse::Unauthorized(null);
 ``` json5
 //HTTP Response 
 Status Code: 401 Unauthorized
+```
+
+##### 403 Error example
+``` php
+//Execution in php
+return ApiResponse::Forbidden();
+```
+
+``` json
+//Response
+{
+   "status": "error",
+   "message": "Forbidden",
+   "data": null
+}
+```
+
+``` json5
+//HTTP Response 
+Status Code: 403 Forbidden
 ```
 
 ## Credits

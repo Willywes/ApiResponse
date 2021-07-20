@@ -37,6 +37,26 @@ class ApiResponse implements ICode
         return response()->json(Format::Response(self::STATUS_ERROR, self::CODE_200, $message, $data), 200);
     }
 
+    public static function Created($data = null, $message = null)
+    {
+        return response()->json(Format::Response(self::STATUS_ERROR, self::CODE_201, $message, $data), 201);
+    }
+
+    public static function Accepted($data = null, $message = null)
+    {
+        return response()->json(Format::Response(self::STATUS_ERROR, self::CODE_202, $message, $data), 202);
+    }
+
+    public static function NonAuthoritativeInformation($data = null, $message = null)
+    {
+        return response()->json(Format::Response(self::STATUS_ERROR, self::CODE_203, $message, $data), 203);
+    }
+
+    public static function NoContent($data = null, $message = null)
+    {
+        return response()->json(Format::Response(self::STATUS_ERROR, self::CODE_204, $message, $data), 204);
+    }
+
     // ERRORS 40*
     public static function BadRequest($data = null, $message = null)
     {
@@ -58,6 +78,16 @@ class ApiResponse implements ICode
         return response()->json(Format::Response(self::STATUS_ERROR, self::CODE_404, $message, $data), 404);
     }
 
+    public static function MethodNotAllowed($data = null, $message = null)
+    {
+        return response()->json(Format::Response(self::STATUS_ERROR, self::CODE_405, $message, $data), 405);
+    }
+
+    public static function RequestTimeout($data = null, $message = null)
+    {
+        return response()->json(Format::Response(self::STATUS_ERROR, self::CODE_408, $message, $data), 408);
+    }
+
     // ERRORS 50*
     public static function InternalServerError($data = null, $message = null)
     {
@@ -72,6 +102,11 @@ class ApiResponse implements ICode
     public static function BadGateway($data = null, $message = null)
     {
         return response()->json(Format::Response(self::STATUS_ERROR, self::CODE_502, $message, $data), 502);
+    }
+
+    public static function ServiceUnavailable($data = null, $message = null)
+    {
+        return response()->json(Format::Response(self::STATUS_ERROR, self::CODE_503, $message, $data), 503);
     }
 
 }
