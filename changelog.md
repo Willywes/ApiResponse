@@ -2,7 +2,7 @@
 
 All notable changes to `ApiResponse` will be documented in this file.
 
-## v1.1.0 - 2021-08-06
+## v1.2.0 - 2021-08-06
 ### Fixed
 - HTTP 2.x.x response success
 ---
