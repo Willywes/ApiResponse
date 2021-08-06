@@ -2,6 +2,10 @@
 
 All notable changes to `ApiResponse` will be documented in this file.
 
+## v1.1.0 - 2021-08-06
+### Fixed
+- HTTP 2.x.x response success
+---
 ## v1.0.0 - 2021-07-20
 ### Added
 - New HTTP Codes

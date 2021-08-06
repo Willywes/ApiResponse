@@ -34,27 +34,27 @@ class ApiResponse implements ICode
     // ACCEPTS 20*
     public static function Ok($data = null, $message = null)
     {
-        return response()->json(Format::Response(self::STATUS_ERROR, self::CODE_200, $message, $data), 200);
+        return response()->json(Format::Response(self::STATUS_SUCCESS, self::CODE_200, $message, $data), 200);
     }
 
     public static function Created($data = null, $message = null)
     {
-        return response()->json(Format::Response(self::STATUS_ERROR, self::CODE_201, $message, $data), 201);
+        return response()->json(Format::Response(self::STATUS_SUCCESS, self::CODE_201, $message, $data), 201);
     }
 
     public static function Accepted($data = null, $message = null)
     {
-        return response()->json(Format::Response(self::STATUS_ERROR, self::CODE_202, $message, $data), 202);
+        return response()->json(Format::Response(self::STATUS_SUCCESS, self::CODE_202, $message, $data), 202);
     }
 
     public static function NonAuthoritativeInformation($data = null, $message = null)
     {
-        return response()->json(Format::Response(self::STATUS_ERROR, self::CODE_203, $message, $data), 203);
+        return response()->json(Format::Response(self::STATUS_SUCCESS, self::CODE_203, $message, $data), 203);
     }
 
     public static function NoContent($data = null, $message = null)
     {
-        return response()->json(Format::Response(self::STATUS_ERROR, self::CODE_204, $message, $data), 204);
+        return response()->json(Format::Response(self::STATUS_SUCCESS, self::CODE_204, $message, $data), 204);
     }
 
     // ERRORS 40*
