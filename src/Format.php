@@ -31,5 +31,8 @@ class Format implements ICode
         if ($class == self::STATUS_FIELDS_VALIDATION) {
             return 'Error en campos.';
         }
+        if ($class == self::STATUS_REDIRECTION) {
+            return 'Redirección.';
+        }
     }
 }
