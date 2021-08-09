@@ -36,17 +36,17 @@ class ApiResponse implements ICode
     {
         return response()->json(Format::Response(self::STATUS_INFO, self::CODE_100, $message, $data), 100);
     }
-    
+
     public static function SwitchProtocol($data = null, $message = null)
     {
         return response()->json(Format::Response(self::STATUS_INFO, self::CODE_101, $message, $data), 101);
     }
-    
+
     public static function Processing($data = null, $message = null)
     {
         return response()->json(Format::Response(self::STATUS_INFO, self::CODE_102, $message, $data), 102);
     }
-    
+
     public static function EarlyHint($data = null, $message = null)
     {
         return response()->json(Format::Response(self::STATUS_INFO, self::CODE_103, $message, $data), 103);
