@@ -2,6 +2,10 @@
 
 All notable changes to `ApiResponse` will be documented in this file.
 
+## v1.4.0 - 2021-11-08
+### Added
+- All responses http code functions
+
 ## v1.3.0 - 2021-08-06
 ### Added
 - All responses code

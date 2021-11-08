@@ -544,11 +544,6 @@ class ApiResponse implements ICode
         return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_508, $message, $data), 508);
     }
 
-    public static function Http509($data = null, $message = null)
-    {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_509, $message, $data), 509);
-    }
-
     public static function Http510($data = null, $message = null)
     {
         return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_510, $message, $data), 510);
