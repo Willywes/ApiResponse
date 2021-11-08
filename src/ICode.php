@@ -59,7 +59,7 @@ interface ICode
     const CODE_504 = 'Gateway Time-out';
     const CODE_505 = 'HTTP Version not supported';
     const CODE_506 = 'Variant Also Negotiates';
-    const CODE_507 = 'Insuficcient Storage';
+    const CODE_507 = 'Insufficient Storage';
     const CODE_508 = 'Loop Detected';
     const CODE_510 = 'Not Extended';
     const CODE_511 = 'Network Authentication Required';

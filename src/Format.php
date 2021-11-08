@@ -25,6 +25,8 @@ class Format implements ICode
                 return 'Warning';
             case self::STATUS_ERROR:
                 return 'Error';
+            case self::STATUS_REDIRECTION:
+                return 'Redirection';
             case self::STATUS_FIELDS_VALIDATION:
                 return 'Error Fields';
             default:
