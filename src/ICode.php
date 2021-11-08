@@ -72,6 +72,4 @@ interface ICode
     const STATUS_ERROR = 'error';
     const STATUS_FIELDS_VALIDATION = 'fields_validation';
     const STATUS_REDIRECTION = 'redirection';
-
-
 }
