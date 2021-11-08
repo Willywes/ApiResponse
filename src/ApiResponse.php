@@ -361,7 +361,6 @@ class ApiResponse implements ICode
         return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_451, $message, $data), 451);
     }
 
-
     public static function BadRequest($data = null, $message = null)
     {
         return self::Http400($data, $message);

@@ -32,6 +32,5 @@ class Format implements ICode
             default:
                 return '';
         }
-
     }
 }
