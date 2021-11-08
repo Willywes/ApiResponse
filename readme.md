@@ -216,6 +216,8 @@ return ApiResponse::NotFound(null, 'object not found!');
 // or
 //Execution in php without params
 return ApiResponse::NotFound();
+// or
+return ApiResponse::Http404();
 ```
 
 ``` json
@@ -237,6 +239,8 @@ Status Code: 404 Not Found
 ``` php
 //Execution in php
 return ApiResponse::Unauthorized();
+// or
+return ApiResponse::Http401();
 ```
 
 ``` json
@@ -258,6 +262,8 @@ Status Code: 401 Unauthorized
 ``` php
 //Execution in php
 return ApiResponse::Forbidden();
+// or
+return ApiResponse::Http403();
 ```
 
 ``` json
