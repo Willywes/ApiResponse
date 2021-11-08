@@ -4,7 +4,7 @@ namespace Willywes\ApiResponse;
 
 class Format implements ICode
 {
-    public static function Response($status, $title = null, $message = null, $data = null)
+    public static function Response($status, $title = null, $message = null, $data = null): array
     {
         return [
             'status' => $status,
@@ -14,22 +14,22 @@ class Format implements ICode
         ];
     }
 
-    private static function SetDefaultTitle($class)
+    private static function SetDefaultTitle($class): string
     {
-        if ($class == self::STATUS_INFO) {
-            return 'Información.';
+        switch ($class) {
+            case self::STATUS_INFO:
+                return 'Info';
+            case self::STATUS_SUCCESS:
+                return 'Success';
+            case self::STATUS_WARNING:
+                return 'Warning';
+            case self::STATUS_ERROR:
+                return 'Error';
+            case self::STATUS_FIELDS_VALIDATION:
+                return 'Error Fields';
+            default:
+                return '';
         }
-        if ($class == self::STATUS_SUCCESS) {
-            return 'Operación Exitosa.';
-        }
-        if ($class == self::STATUS_WARNING) {
-            return 'Advertencia.';
-        }
-        if ($class == self::STATUS_ERROR) {
-            return 'Ha ocurrido un error.';
-        }
-        if ($class == self::STATUS_FIELDS_VALIDATION) {
-            return 'Error en campos.';
-        }
+
     }
 }

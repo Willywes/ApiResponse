@@ -51,9 +51,5 @@ interface ICode
     const STATUS_ERROR = 'error';
     const STATUS_FIELDS_VALIDATION = 'fields_validation';
 
-    // AUTH CODES
 
-    const AUTH_NOT_ALLOW = 'Su cuenta no se encuentra activa, por favor comuniquese con un administrador.';
-    const AUTH_NOT_FOUND = 'Su cuenta no se encuentra activa, por favor comuniquese con un administrador.';
-    const AUTH_DISABLED = 'Su cuenta no se encuentra activa, por favor comuniquese con un administrador.';
 }
