@@ -1,6 +1,9 @@
 # Changelog
 
 All notable changes to `ApiResponse` will be documented in this file.
+## v1.5.0 - 2021-11-24
+### Fix
+- All status code response
 
 ## v1.4.0 - 2021-11-08
 ### Added

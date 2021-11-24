@@ -75,37 +75,37 @@ class ApiResponse implements ICode
     // ACCEPTS 20*
     public static function Http200($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_200, $message, $data), 200);
+        return self::responseJson(Format::Response(self::STATUS_SUCCESS, self::CODE_200, $message, $data), 200);
     }
 
     public static function Http201($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_201, $message, $data), 201);
+        return self::responseJson(Format::Response(self::STATUS_SUCCESS, self::CODE_201, $message, $data), 201);
     }
 
     public static function Http202($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_202, $message, $data), 202);
+        return self::responseJson(Format::Response(self::STATUS_SUCCESS, self::CODE_202, $message, $data), 202);
     }
 
     public static function Http203($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_203, $message, $data), 203);
+        return self::responseJson(Format::Response(self::STATUS_SUCCESS, self::CODE_203, $message, $data), 203);
     }
 
     public static function Http204($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_204, $message, $data), 204);
+        return self::responseJson(Format::Response(self::STATUS_SUCCESS, self::CODE_204, $message, $data), 204);
     }
 
     public static function Http205($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_205, $message, $data), 205);
+        return self::responseJson(Format::Response(self::STATUS_SUCCESS, self::CODE_205, $message, $data), 205);
     }
 
     public static function Http206($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_206, $message, $data), 206);
+        return self::responseJson(Format::Response(self::STATUS_SUCCESS, self::CODE_206, $message, $data), 206);
     }
 
     public static function Ok($data = null, $message = null)
@@ -146,42 +146,42 @@ class ApiResponse implements ICode
     //REDIRECTION 30*
     public static function Http300($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_300, $message, $data), 300);
+        return self::responseJson(Format::Response(self::STATUS_REDIRECTION, self::CODE_300, $message, $data), 300);
     }
 
     public static function Http301($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_301, $message, $data), 301);
+        return self::responseJson(Format::Response(self::STATUS_REDIRECTION, self::CODE_301, $message, $data), 301);
     }
 
     public static function Http302($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_302, $message, $data), 302);
+        return self::responseJson(Format::Response(self::STATUS_REDIRECTION, self::CODE_302, $message, $data), 302);
     }
 
     public static function Http303($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_303, $message, $data), 303);
+        return self::responseJson(Format::Response(self::STATUS_REDIRECTION, self::CODE_303, $message, $data), 303);
     }
 
     public static function Http304($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_304, $message, $data), 304);
+        return self::responseJson(Format::Response(self::STATUS_REDIRECTION, self::CODE_304, $message, $data), 304);
     }
 
     public static function Http305($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_305, $message, $data), 305);
+        return self::responseJson(Format::Response(self::STATUS_REDIRECTION, self::CODE_305, $message, $data), 305);
     }
 
     public static function Http307($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_307, $message, $data), 307);
+        return self::responseJson(Format::Response(self::STATUS_REDIRECTION, self::CODE_307, $message, $data), 307);
     }
 
     public static function Http308($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_308, $message, $data), 308);
+        return self::responseJson(Format::Response(self::STATUS_REDIRECTION, self::CODE_308, $message, $data), 308);
     }
 
     public static function MultipleChoices($data = null, $message = null)
@@ -228,137 +228,137 @@ class ApiResponse implements ICode
 
     public static function Http400($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_400, $message, $data), 400);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_400, $message, $data), 400);
     }
 
     public static function Http401($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_401, $message, $data), 401);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_401, $message, $data), 401);
     }
 
     public static function Http402($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_402, $message, $data), 402);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_402, $message, $data), 402);
     }
 
     public static function Http403($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_403, $message, $data), 403);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_403, $message, $data), 403);
     }
 
     public static function Http404($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_404, $message, $data), 404);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_404, $message, $data), 404);
     }
 
     public static function Http405($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_405, $message, $data), 405);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_405, $message, $data), 405);
     }
 
     public static function Http406($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_406, $message, $data), 406);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_406, $message, $data), 406);
     }
 
     public static function Http407($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_407, $message, $data), 407);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_407, $message, $data), 407);
     }
 
     public static function Http408($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_408, $message, $data), 408);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_408, $message, $data), 408);
     }
 
     public static function Http409($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_409, $message, $data), 409);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_409, $message, $data), 409);
     }
 
     public static function Http410($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_410, $message, $data), 410);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_410, $message, $data), 410);
     }
 
     public static function Http411($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_411, $message, $data), 411);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_411, $message, $data), 411);
     }
 
     public static function Http412($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_412, $message, $data), 412);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_412, $message, $data), 412);
     }
 
     public static function Http413($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_413, $message, $data), 413);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_413, $message, $data), 413);
     }
 
     public static function Http414($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_414, $message, $data), 414);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_414, $message, $data), 414);
     }
 
     public static function Http415($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_415, $message, $data), 415);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_415, $message, $data), 415);
     }
 
     public static function Http416($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_416, $message, $data), 416);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_416, $message, $data), 416);
     }
 
     public static function Http417($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_417, $message, $data), 417);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_417, $message, $data), 417);
     }
 
     public static function Http421($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_421, $message, $data), 421);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_421, $message, $data), 421);
     }
 
     public static function Http422($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_422, $message, $data), 422);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_422, $message, $data), 422);
     }
 
     public static function Http423($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_423, $message, $data), 423);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_423, $message, $data), 423);
     }
 
     public static function Http424($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_424, $message, $data), 424);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_424, $message, $data), 424);
     }
 
     public static function Http426($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_426, $message, $data), 426);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_426, $message, $data), 426);
     }
 
     public static function Http428($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_428, $message, $data), 428);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_428, $message, $data), 428);
     }
 
     public static function Http429($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_429, $message, $data), 429);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_429, $message, $data), 429);
     }
 
     public static function Http431($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_431, $message, $data), 431);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_431, $message, $data), 431);
     }
 
     public static function Http451($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_451, $message, $data), 451);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_451, $message, $data), 451);
     }
 
     public static function BadRequest($data = null, $message = null)
@@ -500,57 +500,57 @@ class ApiResponse implements ICode
 
     public static function Http500($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_500, $message, $data), 500);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_500, $message, $data), 500);
     }
 
     public static function Http501($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_501, $message, $data), 501);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_501, $message, $data), 501);
     }
 
     public static function Http502($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_502, $message, $data), 502);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_502, $message, $data), 502);
     }
 
     public static function Http503($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_503, $message, $data), 503);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_503, $message, $data), 503);
     }
 
     public static function Http504($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_504, $message, $data), 504);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_504, $message, $data), 504);
     }
 
     public static function Http505($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_505, $message, $data), 505);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_505, $message, $data), 505);
     }
 
     public static function Http506($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_506, $message, $data), 506);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_506, $message, $data), 506);
     }
 
     public static function Http507($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_507, $message, $data), 507);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_507, $message, $data), 507);
     }
 
     public static function Http508($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_508, $message, $data), 508);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_508, $message, $data), 508);
     }
 
     public static function Http510($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_510, $message, $data), 510);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_510, $message, $data), 510);
     }
 
     public static function Http511($data = null, $message = null)
     {
-        return self::responseJson(Format::Response(self::STATUS_INFO, self::CODE_511, $message, $data), 511);
+        return self::responseJson(Format::Response(self::STATUS_ERROR, self::CODE_511, $message, $data), 511);
     }
 
     public static function InternalServerError($data = null, $message = null)
