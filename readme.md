@@ -45,7 +45,8 @@ Default functions that always return a http 200 code, but have a control state.
 |**JsonError**                 | Response status "error" with HTTP 200            |
 |**JsonWarning**               | Response status "warning" with HTTP 200          |
 |**JsonInfo**                  | Response status "info" with HTTP 200             |
-|**JsonFieldValidation**      | Response status "field_validation" with HTTP 200|
+|**JsonFieldValidation**       | Response status "field_validation" with HTTP 200|
+|**JsonFieldValidationError**  | Response status "field_validation" with HTTP 422|
 
 #### Examples
 

@@ -1,6 +1,11 @@
 # Changelog
 
 All notable changes to `ApiResponse` will be documented in this file.
+## v1.6.0 - 2022-01-21
+### Added
+- JsonFieldValidationError with http code 422
+
+All notable changes to `ApiResponse` will be documented in this file.
 ## v1.5.0 - 2021-11-24
 ### Fix
 - All status code response
