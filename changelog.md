@@ -1,6 +1,15 @@
 # Changelog
 
 All notable changes to `ApiResponse` will be documented in this file.
+
+## v1.6.1 - 2022-04-25
+### Added
+- Illuminate Support ~9
+
+## v1.6.0 - 2022-01-21
+### Added
+- JsonFieldValidationError with http code 422
+
 ## v1.5.0 - 2021-11-24
 ### Fix
 - All status code response
