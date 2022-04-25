@@ -29,6 +29,11 @@ class ApiResponse implements ICode
         return self::responseJson(Format::Response(self::STATUS_FIELDS_VALIDATION, $title, $message, $data), 200);
     }
 
+    public static function JsonFieldValidationError($data = null, $message = null, $title = null)
+    {
+        return self::responseJson(Format::Response(self::STATUS_FIELDS_VALIDATION, $title, $message, $data), 422);
+    }
+
     // HTTPS RESPONSE
 
     //INFO 10*
