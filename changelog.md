@@ -1,6 +1,9 @@
 # Changelog
 
 All notable changes to `ApiResponse` will be documented in this file.
+## v1.7.0 - 2023-09-11
+### Added
+- Illuminate Support ~10
 
 ## v1.6.1 - 2022-04-25
 ### Added
